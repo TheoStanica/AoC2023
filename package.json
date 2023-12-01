@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TheoStanica/AoC2023#readme",
   "dependencies": {
+    "@types/node": "^20.10.1",
     "fs": "^0.0.1-security"
   }
 }
