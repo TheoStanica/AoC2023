@@ -10,19 +10,6 @@ const ColorsMap = new Map<string, number>([
   ['blue', 4],
 ]);
 
-const isColorPossible = (color: string, value: number) => {
-  if (color === 'red') {
-    return value <= 12;
-  }
-  if (color === 'green') {
-    return value <= 13;
-  }
-  if (color === 'blue') {
-    return value <= 14;
-  }
-  return false;
-};
-
 let sum = 0;
 
 lines.forEach((line) => {
@@ -36,8 +23,6 @@ lines.forEach((line) => {
   let maximums = [1, 1, 1];
 
   gameData.split(';').forEach((gameSet) => {
-    // get max red, green, blue in the set
-    // r g b
     const values = gameSet.split(', ');
 
     values.forEach((value) => {
